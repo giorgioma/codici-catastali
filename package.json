@@ -1,0 +1,30 @@
+{
+  "name": "codici-catastali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp ./node_modules/codice-fiscale-js/src/geo-data.js ./  && babel index.js -d lib && babel geo-data.js -d lib && node ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgioma/codici-catastali.git"
+  },
+  "author": "giorgioma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giorgioma/codici-catastali/issues"
+  },
+  "homepage": "https://github.com/giorgioma/codici-catastali#readme",
+  "dependencies": {
+    "codice-fiscale-js": "^2.1.0",
+    "convert-array-to-csv": "^1.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2"
+  }
+}
